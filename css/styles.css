@@ -1,0 +1,613 @@
+#radioStuff {
+  display:inline-block;
+}
+#about {
+  display:inline-block;
+}
+/*default*/
+/*.mobile-visible { display:none;}*/
+
+/*mobile*/
+@media screen and (max-width: 601px){
+
+  *{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:none;
+    }
+
+    body {
+     font-family: 'Special Elite';
+     font-size: 18px;
+     background-color: #c4824d;
+     background-image: url("../img/abc_flyers.png");
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-size: cover;
+     min-height: 100vh;
+   }
+
+  #myBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    background-color: #ce7f43;
+  }
+
+   #header{
+
+     color: #c4824d;
+     background-color: black;
+     font: 'Special Elite', cursive;
+     padding-top: 2%;
+     text-align:center;
+
+   }
+
+
+
+   .clearfix{
+     clear:both;
+   }
+
+   /* The Modal (background) */
+   .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #ce7f43;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-content {
+   text-align:center;
+  }
+
+
+    .modal-content button{
+      width:275px;
+      height:50px;
+
+      text-align: center;
+      background-color:black;
+      border-radius: 20px;
+    }
+
+    .modal-content a{
+      text-decoration:none;
+      width:100%;
+      font-weight: bold;
+      font-size: 25px;
+      cursor:pointer;
+      color:white;
+      text-align: center;
+
+    }
+    .modal-content a:hover{
+      color:black;
+    }
+    button:hover {
+      background-color: white;
+
+  }
+
+
+
+
+  #radioStuff {
+    text-align: center;
+  }
+
+  #radio-info {
+  	max-width:360px;
+  	height: 450px;
+    margin:0 auto;
+  	margin-top: 4%;
+    display: inline-block;
+    overflow: auto;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding: 20px;
+
+  }
+#radio-info img{
+  max-width:100%;
+  object-fit: cover;
+
+}
+  #face{
+  	text-align: center;
+  	font-weight: bold;
+  	max-width: 400px;
+  	height:110px;
+  	border: solid black;
+  	/*display: inline-block;*/
+    overflow: auto;
+    border-radius: 20px;
+    margin:0 auto;
+    margin-top:1%;
+    padding-top:1%;
+
+  }
+
+
+  #radio-buttons{
+  	max-width: 360px;
+  	height:110px;
+  	border: solid black;
+  	display: inline-block;
+    overflow: auto;
+    border-radius: 20px;
+    margin:0 auto;
+    margin-top: 1%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+
+ button.sounds{
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+  }
+
+  button#back{
+
+    background-image: url("../img/back.png");
+  }
+
+
+  button#play{
+
+    background-image: url("../img/play.png");
+  }
+
+  button#pause{
+
+    background-image: url("../img/pause.png");
+  }
+
+  button#skip{
+    background-image: url("../img/skip.png");
+  }
+
+  #about{
+    display:none;
+  }
+
+}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 602px)
+  and (max-width: 1024px){
+
+
+
+  *{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:none;
+  }
+
+  body {
+    font-family: 'Special Elite';
+    font-size: 18px;
+     background-color: #c4824d;
+     text-align: center;
+     background-image: url("../img/abc_flyers.png");
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-size: cover;
+     min-height: 100vh;
+  }
+
+  #myBtn{
+    display:none;
+  }
+
+  #myModal{
+    display:none;
+  }
+
+  #header{
+
+    color: #c4824d;
+    background-color: black;
+    font: 'Special Elite', cursive;
+    padding-top: 2%;
+    text-align: center;
+  }
+
+
+  .clearfix{
+    clear:both;
+  }
+
+  #radioStuff{
+    display: inline-block;
+
+  }
+
+  #radio-info img{
+    max-width:100%;
+    object-fit: cover;
+
+  }
+  #about{
+    display: inline-block;
+  }
+
+  #radioStuff {
+    vertical-align: top;
+    width: 40vw;
+  }
+
+  #about {
+    max-width:360px;
+  	height: 450px;
+    width: 40vw;
+    display: inline-block;
+    overflow: auto;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 2%;
+  }
+
+  #face{
+    max-width: 360px;
+    height:85px;
+    width: 38vw;
+    margin-left: 3vw;
+    overflow: auto;
+    border: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding:20px;
+    margin-top:20px;
+    text-align: center;
+  	font-weight: bold;
+    border-radius: 20px;
+    margin:0 auto;
+    margin-top:2%;
+    padding-top:1%;
+  }
+
+  #radio-buttons{
+    height: 110px;
+    width:98.5%;
+  	height:110px;
+  	border: solid black;
+  	display: inline-block;
+    overflow: auto;
+    border-radius: 20px;
+    margin:0 auto;
+    margin-top:2%;
+    /*padding: 0 20px;*/
+    text-align: center;
+  }
+
+
+  #radio-info {
+    max-width:360vw;
+  	height: 450px;
+    margin:0 auto;
+  	margin-top: 2%;
+    display: inline-block;
+    overflow: auto;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+
+
+  #right{
+    display:inline-block;
+    text-align:center;
+  }
+
+  #about button{
+    width:275px;
+    height:50px;
+
+    text-align: center;
+    background-color:black;
+    border-radius: 20px;
+  }
+
+  #about a{
+    text-decoration:none;
+    width:100%;
+    font-weight: bold;
+    font-size: 25px;
+    cursor:pointer;
+    color:white;
+    text-align: center;
+
+  }
+  #about a:hover{
+    color:black;
+  }
+  #about button:hover {
+    background-color: white;
+
+}
+
+
+ button{
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+  }
+
+  button#back{
+
+    background-image: url("../img/back.png");
+  }
+
+
+  button#play{
+
+    background-image: url("../img/play.png");
+  }
+
+  button#pause{
+
+    background-image: url("../img/pause.png");
+  }
+
+  button#skip{
+    background-image: url("../img/skip.png");
+  }
+
+
+}
+/*////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1025px){
+  *{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:none;
+  }
+
+
+
+
+  body {
+    font-family: 'Special Elite';
+    font-size: 18px;
+     background-color: #c4824d;
+     text-align: center;
+     background-image: url("../img/abc_flyers.png");
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-size: cover;
+     min-height: 100vh;
+
+
+  }
+
+  #myBtn{
+    display:none;
+  }
+
+  #myModal{
+    display:none;
+  }
+
+  #header{
+
+    color: #c4824d;
+    background-color: black;
+    font: 'Special Elite', cursive;
+    padding-top: 2%;
+    text-align: center;
+  }
+
+
+  .clearfix{
+    clear:both;
+  }
+
+  #radioStuff{
+    display: inline-block;
+  }
+
+  #radio-info img{
+    max-width:360px;
+    object-fit: cover;
+
+  }
+  #about{
+    display: inline-block;
+  }
+
+  #radioStuff {
+    vertical-align: top;
+    width: 40vw;
+  }
+
+  #about {
+    max-width:360px;
+  	height: 450px;
+    width: 40vw;
+    display: inline-block;
+    overflow: auto;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 3%;
+  }
+
+  #face{
+    max-width: 360px;
+    height:85px;
+    width: 38vw;
+    margin-left: 3vw;
+    overflow: auto;
+    border: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding:20px;
+    margin-top:20px;
+    text-align: center;
+  	font-weight: bold;
+    border-radius: 20px;
+    margin:0 auto;
+    margin-top:1%;
+    padding-top:1%;
+  }
+
+  #radio-buttons{
+    height: 110px;
+    max-width:360px;
+    width:38vw;
+  	height:110px;
+  	border: solid black;
+  	display: inline-block;
+    overflow: auto;
+    border-radius: 20px;
+    margin:0 auto;
+    margin-top:2%;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+
+  #radio-info {
+    max-width:360vw;
+  	height: 450px;
+    margin:0 auto;
+  	margin-top: 2%;
+    display: inline-block;
+    overflow: auto;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+
+
+  #right{
+    display:inline-block;
+    text-align:center;
+  }
+
+  #about button{
+    width:275px;
+    height:50px;
+
+    text-align: center;
+    background-color:black;
+    border-radius: 20px;
+  }
+
+  #about a{
+    text-decoration:none;
+    width:100%;
+    font-weight: bold;
+    font-size: 25px;
+    cursor:pointer;
+    color:white;
+    text-align: center;
+
+  }
+  #about a:hover{
+    color:black;
+  }
+  #about button:hover {
+    background-color: white;
+
+}
+
+
+ button{
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+  }
+
+  button#back{
+
+    background-image: url("../img/back.png");
+  }
+
+
+  button#play{
+
+    background-image: url("../img/play.png");
+  }
+
+  button#pause{
+
+    background-image: url("../img/pause.png");
+  }
+
+  button#skip{
+    background-image: url("../img/skip.png");
+  }
+
+  #about a{
+    text-decoration:none;
+    width:100%;
+    font-weight: bold;
+    font-size: 25px;
+    cursor:pointer;
+    color:white;
+    text-align: center;
+
+  }
+  #about a:hover{
+    color:black;
+  }
+  #about button:hover {
+    background-color: white;
+
+  }
+
+}
