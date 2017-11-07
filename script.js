@@ -201,7 +201,7 @@ $(document).ready(function(){
 	myRadio.load(ten);
 	myRadio.load(eleven);
 	myRadio.load(twelve);
-	myRadio.load(thirteen);
+	
 
 
 	// Get the modal
