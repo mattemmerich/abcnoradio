@@ -1,0 +1,1030 @@
+.container{
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+
+.background{
+  max-width: 100vh;
+min-width: 100vh;
+height: 100vh;
+background-size: contain;
+/*background-image: url(../images/blaster.png);*/
+background-repeat: no-repeat;
+position: absolute;
+top: 0;
+left: 0;
+
+}
+/*
+#loader {
+  background-color: #FFF;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}*/
+#blaster {
+  width: 100vw;
+}
+
+#leftSpeaker{
+
+  width: 37%;
+  z-index: 10;
+  position: absolute;
+  left: 2vw;
+  top: 22vw;
+  animation: beat 0.35s linear infinite;
+
+}
+
+#rightSpeaker{
+  width: 37%;
+  z-index: 10;
+  position: absolute;
+  right: 2vw;
+  top: 22vw;
+  animation: beat 0.35s linear infinite;
+}
+
+@keyframes beat {
+  100% {
+    transform: scaleX(.75) scaleY(.75);
+  }
+}
+
+.wheelLeft{
+  width: 6.5%;
+    z-index: 10;
+    position: absolute;
+    right: 50.75vw;
+    top: 38.5vw;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.wheelRight{
+  width: 6.5%;
+      z-index: 10;
+      position: absolute;
+      right: 43.75vw;
+      top: 38.5vw;
+      animation: 2s spin linear infinite;
+
+}
+
+.soundbar {
+
+  width: 22vw;
+  height: 1.5vw;
+  position: absolute;
+  top: 21.5vw;
+  left: 50.75%;
+  transform: translateX(-52.75%);
+  z-index: 0;
+}
+.soundbar div {
+  position: relative;
+  top: 5vw;
+  margin: 2.2vw .75vw;
+  background-color: green;
+  transform-origin: bottom center;
+  display: inline-block;
+  width: 1vw;
+  height: 1.5vw;
+}
+.soundbar div:first-child {
+  animation: soundbar 1.5s linear infinite;
+}
+.soundbar div:nth-child(2) {
+  animation: soundbar 1.5s linear infinite reverse;
+}
+.soundbar div:nth-child(3) {
+  animation: soundbar 1.6s linear infinite;
+}
+.soundbar div:nth-child(4) {
+  animation: soundbar 1.4s linear infinite reverse;
+}
+.soundbar div:nth-child(5) {
+  animation: soundbar 1.6s linear infinite reverse;
+}
+
+.soundbar div:nth-child(6) {
+  animation: soundbar 1.4s linear infinite reverse;
+}
+
+.soundbar div:nth-child(6) {
+  animation: soundbar 1.2s linear infinite reverse;
+}
+@keyframes soundbar {
+  10% {
+    transform: scaleY(2)
+  }
+  40% {
+    transform: scaleY(0.5)
+  }
+  55% {
+    transform: scaleY(1.1)
+  }
+  75% {
+    transform: scaleY(0.7)
+  }
+  85% {
+    transform: scaleY(1.8)
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-family: 'Special Elite', cursive;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .05s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.typewriter{
+
+  text-align: center;
+
+
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .container{
+    height:100%;
+    width:100%;
+    text-align: center;
+  }
+
+  .background{
+    max-width: 100vh;
+  min-width: 100vh;
+  height: 100vh;
+  background-size: contain;
+  /*background-image: url(../images/blaster.png);*/
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  }
+  /*
+  #loader {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }*/
+  #blaster {
+    width: 100vw;
+  }
+
+  #leftSpeaker{
+
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    left: 2vw;
+    top: 22vw;
+    animation: beat 0.35s linear infinite;
+
+  }
+
+  #rightSpeaker{
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    top: 22vw;
+    animation: beat 0.35s linear infinite;
+  }
+
+  @keyframes beat {
+    100% {
+      transform: scaleX(.75) scaleY(.75);
+    }
+  }
+
+  .wheelLeft{
+    width: 6.5%;
+      z-index: 10;
+      position: absolute;
+      right: 51.25vw;
+      top: 37.75vw;
+      animation: 3s spin linear infinite;
+  }
+
+  @keyframes spin {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+
+  .wheelRight{
+    width: 6.5%;
+        z-index: 10;
+        position: absolute;
+        right: 43.75vw;
+        top: 37.75vw;
+        animation: 2s spin linear infinite;
+
+  }
+
+  .soundbar {
+
+    width: 22vw;
+    height: 1.5vw;
+    position: absolute;
+    top: 21vw;
+    left: 50.75%;
+    transform: translateX(-52.75%);
+    z-index: 0;
+  }
+  .soundbar div {
+    position: relative;
+    top: 5vw;
+    margin: 2.2vw .75vw;
+    background-color: green;
+    transform-origin: bottom center;
+    display: inline-block;
+    width: 1vw;
+    height: 1.5vw;
+  }
+  .soundbar div:first-child {
+    animation: soundbar 1.5s linear infinite;
+  }
+  .soundbar div:nth-child(2) {
+    animation: soundbar 1.5s linear infinite reverse;
+  }
+  .soundbar div:nth-child(3) {
+    animation: soundbar 1.6s linear infinite;
+  }
+  .soundbar div:nth-child(4) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+  .soundbar div:nth-child(5) {
+    animation: soundbar 1.6s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.2s linear infinite reverse;
+  }
+  @keyframes soundbar {
+    10% {
+      transform: scaleY(2)
+    }
+    40% {
+      transform: scaleY(0.5)
+    }
+    55% {
+      transform: scaleY(1.1)
+    }
+    75% {
+      transform: scaleY(0.7)
+    }
+    85% {
+      transform: scaleY(1.8)
+    }
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Special Elite', cursive;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .05s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  .typewriter{
+
+    text-align: center;
+
+
+  }
+
+  a:link {
+      text-decoration: none;
+
+  }
+
+  /* unvisited link */
+  a:link {
+      color: red;
+  }
+
+  /* visited link */
+  a:visited {
+      color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: hotpink;
+  }
+
+  /* selected link */
+  a:active {
+      color: blue;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .container{
+    height:100%;
+    width:100%;
+    text-align: center;
+  }
+
+  .background{
+    max-width: 100vh;
+  min-width: 100vh;
+  height: 100vh;
+  background-size: contain;
+  /*background-image: url(../images/blaster.png);*/
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  }
+  /*
+  #loader {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }*/
+  #blaster {
+    width: 100vw;
+  }
+
+  #leftSpeaker{
+
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    left: 2vw;
+    top: 25vw;
+    animation: beat 0.35s linear infinite;
+
+  }
+
+  #rightSpeaker{
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    top: 25vw;
+    animation: beat 0.35s linear infinite;
+  }
+
+  @keyframes beat {
+    100% {
+      transform: scaleX(.75) scaleY(.75);
+    }
+  }
+
+  .wheelLeft{
+    width: 6.5%;
+      z-index: 10;
+      position: absolute;
+      right: 50.50vw;
+      top: 39.75vw;
+      animation: 3s spin linear infinite;
+  }
+
+  @keyframes spin {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+
+  .wheelRight{
+    width: 6.5%;
+        z-index: 10;
+        position: absolute;
+        right: 43.75vw;
+        top: 39.75vw;
+        animation: 2s spin linear infinite;
+
+  }
+
+  .soundbar {
+
+    width: 22vw;
+    height: 1.5vw;
+    position: absolute;
+    top: 22.5vw;
+    left: 50.75%;
+    transform: translateX(-52.75%);
+    z-index: 0;
+  }
+  .soundbar div {
+    position: relative;
+    top: 5vw;
+    margin: 2.2vw .75vw;
+    background-color: green;
+    transform-origin: bottom center;
+    display: inline-block;
+    width: 1vw;
+    height: 1.5vw;
+  }
+  .soundbar div:first-child {
+    animation: soundbar 1.5s linear infinite;
+  }
+  .soundbar div:nth-child(2) {
+    animation: soundbar 1.5s linear infinite reverse;
+  }
+  .soundbar div:nth-child(3) {
+    animation: soundbar 1.6s linear infinite;
+  }
+  .soundbar div:nth-child(4) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+  .soundbar div:nth-child(5) {
+    animation: soundbar 1.6s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.2s linear infinite reverse;
+  }
+  @keyframes soundbar {
+    10% {
+      transform: scaleY(2)
+    }
+    40% {
+      transform: scaleY(0.5)
+    }
+    55% {
+      transform: scaleY(1.1)
+    }
+    75% {
+      transform: scaleY(0.7)
+    }
+    85% {
+      transform: scaleY(1.8)
+    }
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Special Elite', cursive;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .05s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  .typewriter{
+
+    text-align: center;
+
+
+  }
+
+  a:link {
+      text-decoration: none;
+
+  }
+
+  /* unvisited link */
+  a:link {
+      color: red;
+  }
+
+  /* visited link */
+  a:visited {
+      color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: hotpink;
+  }
+
+  /* selected link */
+  a:active {
+      color: blue;
+  }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width:899px) {
+
+  .container{
+    height:100%;
+    width:100%;
+    text-align: center;
+  }
+
+  .background{
+    max-width: 100vh;
+  min-width: 100vh;
+  height: 100vh;
+  background-size: contain;
+  /*background-image: url(../images/blaster.png);*/
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  }
+  /*
+  #loader {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }*/
+  #blaster {
+    width: 100vw;
+  }
+
+  #leftSpeaker{
+
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    left: 2vw;
+    top: 25vw;
+    animation: beat 0.35s linear infinite;
+
+  }
+
+  #rightSpeaker{
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    top: 25vw;
+    animation: beat 0.35s linear infinite;
+  }
+
+  @keyframes beat {
+    100% {
+      transform: scaleX(.75) scaleY(.75);
+    }
+  }
+
+  .wheelLeft{
+    width: 6.5%;
+      z-index: 10;
+      position: absolute;
+      right: 50.50vw;
+      top: 40.75vw;
+      animation: 3s spin linear infinite;
+  }
+
+  @keyframes spin {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+
+  .wheelRight{
+    width: 6.5%;
+        z-index: 10;
+        position: absolute;
+        right: 43.75vw;
+        top: 40.75vw;
+        animation: 2s spin linear infinite;
+
+  }
+
+  .soundbar {
+
+    width: 22vw;
+    height: 1.5vw;
+    position: absolute;
+    top: 24vw;
+    left: 50.75%;
+    transform: translateX(-52.75%);
+    z-index: 0;
+  }
+  .soundbar div {
+    position: relative;
+    top: 5vw;
+    margin: 2.2vw .75vw;
+    background-color: green;
+    transform-origin: bottom center;
+    display: inline-block;
+    width: 1vw;
+    height: 1.5vw;
+  }
+  .soundbar div:first-child {
+    animation: soundbar 1.5s linear infinite;
+  }
+  .soundbar div:nth-child(2) {
+    animation: soundbar 1.5s linear infinite reverse;
+  }
+  .soundbar div:nth-child(3) {
+    animation: soundbar 1.6s linear infinite;
+  }
+  .soundbar div:nth-child(4) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+  .soundbar div:nth-child(5) {
+    animation: soundbar 1.6s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.2s linear infinite reverse;
+  }
+  @keyframes soundbar {
+    10% {
+      transform: scaleY(2)
+    }
+    40% {
+      transform: scaleY(0.5)
+    }
+    55% {
+      transform: scaleY(1.1)
+    }
+    75% {
+      transform: scaleY(0.7)
+    }
+    85% {
+      transform: scaleY(1.8)
+    }
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Special Elite', cursive;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .05s step-end infinite;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  .typewriter{
+
+    text-align: center;
+
+
+  }
+
+  a:link {
+      text-decoration: none;
+
+  }
+
+  /* unvisited link */
+  a:link {
+      color: red;
+  }
+
+  /* visited link */
+  a:visited {
+      color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: hotpink;
+  }
+
+  /* selected link */
+  a:active {
+      color: blue;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-width:699px) {
+
+  .container{
+    height:100%;
+    width:100%;
+    text-align: center;
+  }
+
+  .background{
+  max-width: 100vh;
+  min-width: 100vh;
+  height: 100vh;
+  background-size: contain;
+  /*background-image: url(../images/blaster.png);*/
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  }
+  /*
+  #loader {
+    background-color: #FFF;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }*/
+  #blaster {
+    width: 100vw;
+  }
+
+  #leftSpeaker{
+
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    left: 2vw;
+    top: 26vw;
+    animation: beat 0.35s linear infinite;
+
+  }
+
+  #rightSpeaker{
+    width: 37%;
+    z-index: 10;
+    position: absolute;
+    right: 2vw;
+    top: 26vw;
+    animation: beat 0.35s linear infinite;
+  }
+
+  @keyframes beat {
+    100% {
+      transform: scaleX(.75) scaleY(.75);
+    }
+  }
+
+  .wheelLeft{
+    width: 6.5%;
+      z-index: 10;
+      position: absolute;
+      right: 49.75vw;
+      top: 40.75vw;
+      animation: 3s spin linear infinite;
+  }
+
+  @keyframes spin {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+
+  .wheelRight{
+    width: 6.5%;
+        z-index: 10;
+        position: absolute;
+        right: 41.75vw;
+        top: 40.75vw;
+        animation: 2s spin linear infinite;
+
+  }
+
+  .soundbar {
+
+    width: 22vw;
+    height: 1.5vw;
+    position: absolute;
+    top: 24vw;
+    left: 50.75%;
+    transform: translateX(-52.75%);
+    z-index: 0;
+  }
+  .soundbar div {
+    position: relative;
+    top: 5vw;
+    margin: 2.2vw .75vw;
+    background-color: green;
+    transform-origin: bottom center;
+    display: inline-block;
+    width: 1vw;
+    height: 1.5vw;
+  }
+  .soundbar div:first-child {
+    animation: soundbar 1.5s linear infinite;
+  }
+  .soundbar div:nth-child(2) {
+    animation: soundbar 1.5s linear infinite reverse;
+  }
+  .soundbar div:nth-child(3) {
+    animation: soundbar 1.6s linear infinite;
+  }
+  .soundbar div:nth-child(4) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+  .soundbar div:nth-child(5) {
+    animation: soundbar 1.6s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.4s linear infinite reverse;
+  }
+
+  .soundbar div:nth-child(6) {
+    animation: soundbar 1.2s linear infinite reverse;
+  }
+  @keyframes soundbar {
+    10% {
+      transform: scaleY(2)
+    }
+    40% {
+      transform: scaleY(0.5)
+    }
+    55% {
+      transform: scaleY(1.1)
+    }
+    75% {
+      transform: scaleY(0.7)
+    }
+    85% {
+      transform: scaleY(1.8)
+    }
+  }
+
+  .typewriter h1 {
+    font-size: 0.95rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-family: 'Special Elite', cursive;
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .05s step-end infinite;
+
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  .typewriter{
+
+    text-align: center;
+
+
+  }
+
+  a:link {
+      text-decoration: none;
+
+  }
+
+  /* unvisited link */
+  a:link {
+      color: red;
+  }
+
+  /* visited link */
+  a:visited {
+      color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+      color: hotpink;
+  }
+
+  /* selected link */
+  a:active {
+      color: blue;
+  }
+}
